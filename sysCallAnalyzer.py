@@ -9,7 +9,7 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 def interpret_logs(logs,command_argument):
     try:
         response = model.generate_content(f"You are an assistant that interprets syscall logs. Your output should only be the system call you see and explaining it in a line about it and at the end you try to guess what the command maybe or what the program maybe trying to do.I also can give you the command line input that was used to run this process, Here you go: {command_argument}, use this to guess the progrm, sometimes it can be a normal linux command, so this cli input that i have given you can be very helpful, you can make your guess sometimes just by looking at the command. Please analyze the following syscall logs and explain their meaning:\n{logs}")
-        
+
         return response.text
     except Exception as e:
         print(f"Error interpreting logs: {e}")
@@ -19,7 +19,7 @@ def read_logs(file_path):
     try:
         with open(file_path, 'r') as file:
             logs = file.read()
-        return logs
+        return logs 
     except FileNotFoundError:
         print(f"Error: {file_path} not found.")
         return ""
