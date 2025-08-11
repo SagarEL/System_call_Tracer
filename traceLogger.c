@@ -86,7 +86,7 @@ void trace_syscall(pid_t child, FILE *log_file) {
         if (WIFEXITED(status)) break;
 
         ptrace(PTRACE_GETREGS, child, NULL, &regs);
-        long syscall_num = regs.orig_rax;
+        long syscall_num = regs.orig_rax;  
 
         if (syscall_num >= 0 && syscall_num < MAX_SYSCALLS) {
             fprintf(log_file, "%s(", syscall_names[syscall_num]);
