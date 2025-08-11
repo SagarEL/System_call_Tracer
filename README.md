@@ -28,12 +28,12 @@ It uses `ptrace` in C to trace all syscalls made by a target process and then le
 
 ### 1️⃣ Clone the repository
 
-git clone https://github.com/SagarEL/System_call_Tracer.git
+CMD : git clone https://github.com/SagarEL/System_call_Tracer.git
 
-cd SystemCallTracer
+CMD : cd SystemCallTracer
 
 ### 2️⃣ Install Python dependencies
-pip install google-generativeai
+CMD : pip install google-generativeai
 
 ### 3️⃣ Set up Google API Key
 Get your API key from: Google AI Studio
@@ -50,7 +50,7 @@ genai.configure(api_key="YOUR_API_KEY")
 Command: gcc traceLogger.c -o mytrace
 ### 2️⃣ Trace a Command
 
-Command: ./mytrace <command> [args...]
+CMD: ./mytrace <command> [args...]
 
 Example: ./mytrace ls -l
 
@@ -58,7 +58,7 @@ This generates syscallLogs.txt with all syscalls.
 
 ### 3️⃣ Analyze with AI
 
-Command : python3 sysCallAnalyzer.py 
+CMD : python3 sysCallAnalyzer.py 
 
 Reads syscallLogs.txt.
 
