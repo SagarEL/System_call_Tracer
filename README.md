@@ -40,3 +40,25 @@ Get your API key from: Google AI Studio
 ### Replace API_KEY in sysCallAnalyzer.py with your key:
 
 genai.configure(api_key="YOUR_API_KEY")
+
+
+## 🚀 How to Use
+
+### 1️⃣ Compile the Tracer
+
+gcc traceLogger.c -o mytrace
+### 2️⃣ Trace a Command
+
+Command: ./mytrace <command> [args...]
+
+Example: ./mytrace ls -l
+This generates syscallLogs.txt with all syscalls.
+
+### 3️⃣ Analyze with AI
+
+Command : python3 sysCallAnalyzer.py "<command> [args...]"
+Example: python3 sysCallAnalyzer.py "ls -l"
+Reads syscallLogs.txt.
+Sends to Gemini API for interpretation.
+Saves output to analysis.txt.
+
