@@ -1,0 +1,12 @@
+openat – Opening a file relative to a directory file descriptor.
+fstat – Getting metadata of the opened file.
+mmap – Mapping file into memory space.
+read – Reading file content into a buffer.
+close – Closing the file descriptor.
+write – Writing data to standard output.
+exit_group – Exiting the process for all threads.
+openat – Opening another file.
+read – Reading its content into a buffer.
+close – Closing that file.
+
+Likely command executed: 'cat filename.txt' or similar file display command.
