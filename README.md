@@ -34,7 +34,7 @@ cd SystemCallTracer
 ### 2️⃣ Install Python dependencies
 pip install google-generativeai
 
-###3️⃣ Set up Google API Key
+### 3️⃣ Set up Google API Key
 Get your API key from: Google AI Studio
 
 ### Replace API_KEY in sysCallAnalyzer.py with your key:
