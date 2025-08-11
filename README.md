@@ -47,7 +47,7 @@ genai.configure(api_key="YOUR_API_KEY")
 
 ### 1️⃣ Compile the Tracer
 
-Command: gcc traceLogger.c -o mytrace
+CMD: gcc traceLogger.c -o mytrace
 ### 2️⃣ Trace a Command
 
 CMD: ./mytrace <command> [args...]
