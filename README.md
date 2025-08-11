@@ -58,9 +58,7 @@ This generates syscallLogs.txt with all syscalls.
 
 ### 3️⃣ Analyze with AI
 
-Command : python3 sysCallAnalyzer.py "<command> [args...]"
-
-Example: python3 sysCallAnalyzer.py "ls -l"
+Command : python3 sysCallAnalyzer.py 
 
 Reads syscallLogs.txt.
 
